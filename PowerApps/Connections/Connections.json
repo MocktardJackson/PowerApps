@@ -1,0 +1,59 @@
+{
+  "285304a6-985c-4fcb-be55-508e4eb56355": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1669/1.0.1669.3520/onedrive/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedrive",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "61c8720b-50ee-4709-8434-d1ea3d1777a3"
+    ],
+    "id": "285304a6-985c-4fcb-be55-508e4eb56355"
+  },
+  "61c8720b-50ee-4709-8434-d1ea3d1777a3": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel",
+      "iconUri": "https://connectoricons-prod.azureedge.net/master/1.0.1678.3629/excel/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excel",
+      "parameterHints": {
+        "285304a6-985c-4fcb-be55-508e4eb56355": {
+          "value": "fileSource"
+        }
+      },
+      "parameterHintsV2": {
+        "fileSource": {
+          "value": "285304a6-985c-4fcb-be55-508e4eb56355"
+        }
+      }
+    },
+    "datasets": {
+      "986AA00EE60BD7E1!2426": {
+        "dataSources": {
+          "CoffeeMachines": {
+            "tableName": "CoffeeMachines"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "CoffeeMachines"
+    ],
+    "dependencies": {
+      "fileSource": "285304a6-985c-4fcb-be55-508e4eb56355"
+    },
+    "dependents": [],
+    "id": "61c8720b-50ee-4709-8434-d1ea3d1777a3"
+  }
+}
